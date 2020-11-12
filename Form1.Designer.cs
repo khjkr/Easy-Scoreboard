@@ -32,19 +32,27 @@
       this.Score_Left = new System.Windows.Forms.Label();
       this.Score_Right = new System.Windows.Forms.Label();
       this.Colon = new System.Windows.Forms.Label();
-      this.Up_Left = new System.Windows.Forms.Button();
-      this.Dn_Left = new System.Windows.Forms.Button();
-      this.Dn_Right = new System.Windows.Forms.Button();
-      this.Up_Right = new System.Windows.Forms.Button();
+      this.Up_Left_One = new System.Windows.Forms.Button();
+      this.Dn_Left_One = new System.Windows.Forms.Button();
+      this.Dn_Right_One = new System.Windows.Forms.Button();
+      this.Up_Right_One = new System.Windows.Forms.Button();
       this.Team_Left = new System.Windows.Forms.Label();
       this.Team_Right = new System.Windows.Forms.Label();
+      this.Up_Left_Three = new System.Windows.Forms.Button();
+      this.Dn_Left_Three = new System.Windows.Forms.Button();
+      this.Reset_Left = new System.Windows.Forms.Button();
+      this.Reset_Right = new System.Windows.Forms.Button();
+      this.Dn_Right_Three = new System.Windows.Forms.Button();
+      this.Up_Right_Three = new System.Windows.Forms.Button();
+      this.Name_Left = new System.Windows.Forms.Button();
+      this.Name_Right = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // Score_Left
       // 
       this.Score_Left.AutoSize = true;
       this.Score_Left.Font = new System.Drawing.Font("Yu Gothic UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Score_Left.Location = new System.Drawing.Point(52, 124);
+      this.Score_Left.Location = new System.Drawing.Point(27, 124);
       this.Score_Left.Name = "Score_Left";
       this.Score_Left.Size = new System.Drawing.Size(72, 86);
       this.Score_Left.TabIndex = 0;
@@ -54,8 +62,9 @@
       // 
       this.Score_Right.AutoSize = true;
       this.Score_Right.Font = new System.Drawing.Font("Yu Gothic UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Score_Right.Location = new System.Drawing.Point(424, 124);
+      this.Score_Right.Location = new System.Drawing.Point(398, 124);
       this.Score_Right.Name = "Score_Right";
+      this.Score_Right.RightToLeft = System.Windows.Forms.RightToLeft.No;
       this.Score_Right.Size = new System.Drawing.Size(72, 86);
       this.Score_Right.TabIndex = 1;
       this.Score_Right.Text = "0";
@@ -70,45 +79,45 @@
       this.Colon.TabIndex = 2;
       this.Colon.Text = ":";
       // 
-      // Up_Left
+      // Up_Left_One
       // 
-      this.Up_Left.Location = new System.Drawing.Point(41, 251);
-      this.Up_Left.Name = "Up_Left";
-      this.Up_Left.Size = new System.Drawing.Size(39, 23);
-      this.Up_Left.TabIndex = 3;
-      this.Up_Left.Text = "Up";
-      this.Up_Left.UseVisualStyleBackColor = true;
-      this.Up_Left.Click += new System.EventHandler(this.Up_Left_Click);
+      this.Up_Left_One.Location = new System.Drawing.Point(41, 280);
+      this.Up_Left_One.Name = "Up_Left_One";
+      this.Up_Left_One.Size = new System.Drawing.Size(39, 23);
+      this.Up_Left_One.TabIndex = 3;
+      this.Up_Left_One.Text = "+1";
+      this.Up_Left_One.UseVisualStyleBackColor = true;
+      this.Up_Left_One.Click += new System.EventHandler(this.Up_Left_One_Click);
       // 
-      // Dn_Left
+      // Dn_Left_One
       // 
-      this.Dn_Left.Location = new System.Drawing.Point(86, 251);
-      this.Dn_Left.Name = "Dn_Left";
-      this.Dn_Left.Size = new System.Drawing.Size(39, 23);
-      this.Dn_Left.TabIndex = 4;
-      this.Dn_Left.Text = "Dn";
-      this.Dn_Left.UseVisualStyleBackColor = true;
-      this.Dn_Left.Click += new System.EventHandler(this.Dn_Left_Click);
+      this.Dn_Left_One.Location = new System.Drawing.Point(86, 280);
+      this.Dn_Left_One.Name = "Dn_Left_One";
+      this.Dn_Left_One.Size = new System.Drawing.Size(39, 23);
+      this.Dn_Left_One.TabIndex = 4;
+      this.Dn_Left_One.Text = "-1";
+      this.Dn_Left_One.UseVisualStyleBackColor = true;
+      this.Dn_Left_One.Click += new System.EventHandler(this.Dn_Left_One_Click);
       // 
-      // Dn_Right
+      // Dn_Right_One
       // 
-      this.Dn_Right.Location = new System.Drawing.Point(458, 251);
-      this.Dn_Right.Name = "Dn_Right";
-      this.Dn_Right.Size = new System.Drawing.Size(39, 23);
-      this.Dn_Right.TabIndex = 6;
-      this.Dn_Right.Text = "Dn";
-      this.Dn_Right.UseVisualStyleBackColor = true;
-      this.Dn_Right.Click += new System.EventHandler(this.Dn_Right_Click);
+      this.Dn_Right_One.Location = new System.Drawing.Point(458, 280);
+      this.Dn_Right_One.Name = "Dn_Right_One";
+      this.Dn_Right_One.Size = new System.Drawing.Size(39, 23);
+      this.Dn_Right_One.TabIndex = 6;
+      this.Dn_Right_One.Text = "-1";
+      this.Dn_Right_One.UseVisualStyleBackColor = true;
+      this.Dn_Right_One.Click += new System.EventHandler(this.Dn_Right_One_Click);
       // 
-      // Up_Right
+      // Up_Right_One
       // 
-      this.Up_Right.Location = new System.Drawing.Point(413, 251);
-      this.Up_Right.Name = "Up_Right";
-      this.Up_Right.Size = new System.Drawing.Size(39, 23);
-      this.Up_Right.TabIndex = 5;
-      this.Up_Right.Text = "Up";
-      this.Up_Right.UseVisualStyleBackColor = true;
-      this.Up_Right.Click += new System.EventHandler(this.Up_Right_Click);
+      this.Up_Right_One.Location = new System.Drawing.Point(413, 280);
+      this.Up_Right_One.Name = "Up_Right_One";
+      this.Up_Right_One.Size = new System.Drawing.Size(39, 23);
+      this.Up_Right_One.TabIndex = 5;
+      this.Up_Right_One.Text = "+1";
+      this.Up_Right_One.UseVisualStyleBackColor = true;
+      this.Up_Right_One.Click += new System.EventHandler(this.Up_Right_One_Click);
       // 
       // Team_Left
       // 
@@ -130,17 +139,103 @@
       this.Team_Right.TabIndex = 8;
       this.Team_Right.Text = "Team2";
       // 
+      // Up_Left_Three
+      // 
+      this.Up_Left_Three.Location = new System.Drawing.Point(41, 309);
+      this.Up_Left_Three.Name = "Up_Left_Three";
+      this.Up_Left_Three.Size = new System.Drawing.Size(39, 23);
+      this.Up_Left_Three.TabIndex = 9;
+      this.Up_Left_Three.Text = "+3";
+      this.Up_Left_Three.UseVisualStyleBackColor = true;
+      this.Up_Left_Three.Click += new System.EventHandler(this.Up_Left_Three_Click);
+      // 
+      // Dn_Left_Three
+      // 
+      this.Dn_Left_Three.Location = new System.Drawing.Point(86, 309);
+      this.Dn_Left_Three.Name = "Dn_Left_Three";
+      this.Dn_Left_Three.Size = new System.Drawing.Size(39, 23);
+      this.Dn_Left_Three.TabIndex = 10;
+      this.Dn_Left_Three.Text = "-3";
+      this.Dn_Left_Three.UseVisualStyleBackColor = true;
+      this.Dn_Left_Three.Click += new System.EventHandler(this.Dn_Left_Three_Click);
+      // 
+      // Reset_Left
+      // 
+      this.Reset_Left.Location = new System.Drawing.Point(41, 251);
+      this.Reset_Left.Name = "Reset_Left";
+      this.Reset_Left.Size = new System.Drawing.Size(83, 23);
+      this.Reset_Left.TabIndex = 11;
+      this.Reset_Left.Text = "Reset";
+      this.Reset_Left.UseVisualStyleBackColor = true;
+      this.Reset_Left.Click += new System.EventHandler(this.Reset_Left_Click);
+      // 
+      // Reset_Right
+      // 
+      this.Reset_Right.Location = new System.Drawing.Point(413, 251);
+      this.Reset_Right.Name = "Reset_Right";
+      this.Reset_Right.Size = new System.Drawing.Size(83, 23);
+      this.Reset_Right.TabIndex = 14;
+      this.Reset_Right.Text = "Reset";
+      this.Reset_Right.UseVisualStyleBackColor = true;
+      this.Reset_Right.Click += new System.EventHandler(this.Reset_Right_Click);
+      // 
+      // Dn_Right_Three
+      // 
+      this.Dn_Right_Three.Location = new System.Drawing.Point(458, 309);
+      this.Dn_Right_Three.Name = "Dn_Right_Three";
+      this.Dn_Right_Three.Size = new System.Drawing.Size(39, 23);
+      this.Dn_Right_Three.TabIndex = 13;
+      this.Dn_Right_Three.Text = "-3";
+      this.Dn_Right_Three.UseVisualStyleBackColor = true;
+      this.Dn_Right_Three.Click += new System.EventHandler(this.Dn_Right_Three_Click);
+      // 
+      // Up_Right_Three
+      // 
+      this.Up_Right_Three.Location = new System.Drawing.Point(413, 309);
+      this.Up_Right_Three.Name = "Up_Right_Three";
+      this.Up_Right_Three.Size = new System.Drawing.Size(39, 23);
+      this.Up_Right_Three.TabIndex = 12;
+      this.Up_Right_Three.Text = "+3";
+      this.Up_Right_Three.UseVisualStyleBackColor = true;
+      this.Up_Right_Three.Click += new System.EventHandler(this.Up_Right_Three_Click);
+      // 
+      // Name_Left
+      // 
+      this.Name_Left.Location = new System.Drawing.Point(42, 222);
+      this.Name_Left.Name = "Name_Left";
+      this.Name_Left.Size = new System.Drawing.Size(83, 23);
+      this.Name_Left.TabIndex = 15;
+      this.Name_Left.Text = "Name";
+      this.Name_Left.UseVisualStyleBackColor = true;
+      // 
+      // Name_Right
+      // 
+      this.Name_Right.Location = new System.Drawing.Point(413, 222);
+      this.Name_Right.Name = "Name_Right";
+      this.Name_Right.Size = new System.Drawing.Size(83, 23);
+      this.Name_Right.TabIndex = 16;
+      this.Name_Right.Text = "Name";
+      this.Name_Right.UseVisualStyleBackColor = true;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(544, 372);
+      this.Controls.Add(this.Name_Right);
+      this.Controls.Add(this.Name_Left);
+      this.Controls.Add(this.Reset_Right);
+      this.Controls.Add(this.Dn_Right_Three);
+      this.Controls.Add(this.Up_Right_Three);
+      this.Controls.Add(this.Reset_Left);
+      this.Controls.Add(this.Dn_Left_Three);
+      this.Controls.Add(this.Up_Left_Three);
       this.Controls.Add(this.Team_Right);
       this.Controls.Add(this.Team_Left);
-      this.Controls.Add(this.Dn_Right);
-      this.Controls.Add(this.Up_Right);
-      this.Controls.Add(this.Dn_Left);
-      this.Controls.Add(this.Up_Left);
+      this.Controls.Add(this.Dn_Right_One);
+      this.Controls.Add(this.Up_Right_One);
+      this.Controls.Add(this.Dn_Left_One);
+      this.Controls.Add(this.Up_Left_One);
       this.Controls.Add(this.Colon);
       this.Controls.Add(this.Score_Right);
       this.Controls.Add(this.Score_Left);
@@ -157,12 +252,20 @@
     private System.Windows.Forms.Label Score_Left;
     private System.Windows.Forms.Label Score_Right;
     private System.Windows.Forms.Label Colon;
-    private System.Windows.Forms.Button Up_Left;
-    private System.Windows.Forms.Button Dn_Left;
-    private System.Windows.Forms.Button Dn_Right;
-    private System.Windows.Forms.Button Up_Right;
+    private System.Windows.Forms.Button Up_Left_One;
+    private System.Windows.Forms.Button Dn_Left_One;
+    private System.Windows.Forms.Button Dn_Right_One;
+    private System.Windows.Forms.Button Up_Right_One;
     private System.Windows.Forms.Label Team_Left;
     private System.Windows.Forms.Label Team_Right;
+    private System.Windows.Forms.Button Up_Left_Three;
+    private System.Windows.Forms.Button Dn_Left_Three;
+    private System.Windows.Forms.Button Reset_Left;
+    private System.Windows.Forms.Button Reset_Right;
+    private System.Windows.Forms.Button Dn_Right_Three;
+    private System.Windows.Forms.Button Up_Right_Three;
+    private System.Windows.Forms.Button Name_Left;
+    private System.Windows.Forms.Button Name_Right;
   }
 }
 
